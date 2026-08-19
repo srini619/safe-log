@@ -46,7 +46,7 @@ negligible per-call overhead.
 ## Installation
 
 ```bash
-npm install safe-log
+npm install @srinivas-dev/safe-log
 ```
 
 Winston and Pino are optional peer dependencies — install whichever you use:
@@ -59,7 +59,7 @@ npm install pino      # if using sanitizeHook()
 ## Basic usage
 
 ```ts
-import { sanitize } from "safe-log";
+import { sanitize } from "@srinivas-dev/safe-log";
 
 const safe = sanitize({
   user: {
@@ -87,7 +87,7 @@ mutating the input.
 
 ```ts
 import winston from "winston";
-import { sanitizeFormat } from "safe-log";
+import { sanitizeFormat } from "@srinivas-dev/safe-log";
 
 const logger = winston.createLogger({
   format: winston.format.combine(
@@ -118,7 +118,7 @@ Pino has no format-pipeline like Winston; instead, `safe-log` hooks into Pino's
 
 ```ts
 import pino from "pino";
-import { sanitizeHook } from "safe-log";
+import { sanitizeHook } from "@srinivas-dev/safe-log";
 
 const logger = pino({ hooks: { logMethod: sanitizeHook() } });
 
@@ -130,7 +130,7 @@ logger.info({ userId: 123, password: "secret123" }, "User login");
 For quick scripts or anywhere you'd otherwise call `console.log` directly:
 
 ```ts
-import { safeConsole } from "safe-log";
+import { safeConsole } from "@srinivas-dev/safe-log";
 
 safeConsole.info("User login", { userId: 123, password: "secret123" });
 ```

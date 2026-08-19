@@ -1,7 +1,10 @@
 {
-  "name": "safe-log",
+  "name": "@srinivas-dev/safe-log",
   "version": "0.1.0",
   "description": "A high-performance, TypeScript-first library that prevents sensitive information from being exposed in application logs.",
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "logging",
     "sanitize",
