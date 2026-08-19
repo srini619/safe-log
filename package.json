@@ -37,7 +37,17 @@
     "./package.json": "./package.json"
   },
   "files": [
-    "dist"
+    "dist",
+    "src",
+    "test",
+    "samples",
+    "bench",
+    "eslint.config.mjs",
+    "tsconfig.json",
+    "tsup.config.ts",
+    "vitest.config.mts",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md"
   ],
   "sideEffects": false,
   "lint-staged": {
