@@ -1,0 +1,35 @@
+/**
+ * Default list of sensitive field names (before normalization).
+ * Intentionally exact/known names only -- no broad substrings like "id" or "key",
+ * which would create excessive false positives (see matcher.ts for match semantics).
+ */
+export const defaultSensitiveFields: readonly string[] = [
+  "password",
+  "passwd",
+  "pwd",
+  "token",
+  "accessToken",
+  "access_token",
+  "refreshToken",
+  "refresh_token",
+  "idToken",
+  "id_token",
+  "authorization",
+  "cookie",
+  "set-cookie",
+  "apiKey",
+  "api_key",
+  "secret",
+  "clientSecret",
+  "client_secret",
+  "privateKey",
+  "private_key",
+  "passphrase",
+  "credential",
+  "credentials",
+  "cvv",
+  "cvc",
+  "cardNumber",
+  "card_number",
+  "ssn",
+];
