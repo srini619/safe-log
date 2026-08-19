@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
-A high-performance, TypeScript-first library that prevents sensitive information (passwords,
+A high-performance, TypeScript-first library that prevents sensitive information and sanitizes (passwords,
 tokens, API keys, credentials, card numbers, etc.) from being accidentally exposed in
 application logs.
 

@@ -12,7 +12,7 @@
     "pino"
   ],
   "license": "MIT",
-  "author": "Your Name",
+  "author": "Srinivasan",
   "engines": {
     "node": ">=18"
   },
@@ -53,6 +53,7 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "bench": "tsx bench/run.ts",
+    "samples": "tsx samples/index.ts",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
