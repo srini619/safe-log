@@ -40,14 +40,7 @@
     "dist",
     "src",
     "test",
-    "samples",
-    "bench",
-    "eslint.config.mjs",
-    "tsconfig.json",
-    "tsup.config.ts",
-    "vitest.config.mts",
-    "CHANGELOG.md",
-    "CONTRIBUTING.md"
+    "samples"
   ],
   "sideEffects": false,
   "lint-staged": {
